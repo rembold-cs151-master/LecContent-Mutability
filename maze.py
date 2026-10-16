@@ -11,6 +11,7 @@ def twisty(path_out):
         path_out (str): The sequence of N,S,E, and W directions to follow
     """
     start = twisty_maze_for(GROUPNAME)
+    print(f"Starting room id is: {hex(id(start))}")
 
     if is_path_to_freedom(start, path_out): # PLACE BREAKPOINT ON THIS LINE
         print("Congratulations! You've found your way out of your twisty labyrinth.")
